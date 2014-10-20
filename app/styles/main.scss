@@ -1,0 +1,209 @@
+$icon-font-path: "../bower_components/bootstrap-sass-official/vendor/assets/fonts/bootstrap/";
+
+@font-face {
+  font-family: 'Conv_proximanova-regularitalic-webfont';
+  src: url('fonts/proximanova-regularitalic-webfont.eot');
+  src: url('fonts/proximanova-regularitalic-webfont.woff'), url('fonts/proximanova-regularitalic-webfont.ttf'), url('fonts/proximanova-regularitalic-webfont.svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Conv_proximanova-bold-webfont';
+  src: url('fonts/proximanova-bold-webfont.eot');
+  src: url('fonts/proximanova-bold-webfont.woff'), url('fonts/proximanova-bold-webfont.ttf'), url('fonts/proximanova-bold-webfont.svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+//$font-family-base: 'Conv_proximanova-regularitalic-webfont';
+$font-family-proxima: 'Conv_proximanova-regularitalic-webfont';
+$headings-font-family: 'Conv_proximanova-bold-webfont';
+
+// bower:scss
+@import "bootstrap-sass-official/vendor/assets/stylesheets/bootstrap.scss";
+// endbower
+
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* Space out content a bit */
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Custom page header */
+.header {
+  border-bottom: 1px solid #e5e5e5;
+
+  /* Make the masthead heading the same height as the navigation */
+  h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 40px;
+    padding-bottom: 19px;
+  }
+}
+
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+
+  .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+  }
+}
+
+// Thumbnail
+.main {
+  .thumb-parent {
+    // Tablet and up
+    @media (min-width: $screen-md) {
+      padding: 0 4px;
+    }
+  }
+  .thumbnail {
+    position: relative;
+
+    &.active {
+      .hover {
+        background-color: white;
+        position: absolute;
+        top:0;
+        left:0;
+        right:0;
+        height: auto;
+        bottom: inherit;
+        padding: 1em 1em 0 1em;
+        margin: -1em -1em 0 -1em;
+        z-index: 1;
+        @include box-shadow(#333333 0px 0px 10px);
+
+        .thumbnail {
+          border: 0;
+          padding: 0;
+
+          .btn {
+            border-radius: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Aside
+aside {
+  a {
+    cursor: pointer;
+  }
+  a:hover,a:focus {
+    text-decoration: none;
+  }
+  .cat {
+    text-transform: capitalize;
+    @extend a;
+  }
+  .search {
+    margin-bottom: $line-height-computed;
+  }
+}
+
+// Details
+.details {
+  .btn {
+    margin-bottom: $line-height-computed / 2;
+  }
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 960px;
+  }
+
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+}
+
+// Animate Cart
+.animate-show {
+  position: absolute;
+  width: 100%;
+  max-width: 370px;
+  margin: 0 15px;
+  top:105px;
+  right:0px;
+  max-height: 200px;
+  overflow: scroll;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 0px 2px 8px #c2c2c2;
+  line-height:20px;
+  opacity:1;
+  z-index: 900;
+  background:white;
+//  -webkit-transition:all linear 0.3s;
+//  transition:all linear 0.3s;
+
+  @media (max-width: $screen-xs) {
+    margin: 0;
+  }
+}
+
+.animate-show.ng-hide {
+  right: -500px;
+}
+
+.cartHeader {
+  @extend .animate-show;
+  background: $brand-primary;
+  top:65px;
+  box-shadow: none;
+  border-radius: 10px 10px 0 0;
+  z-index: 901;
+  padding: 10px 0;
+}
+
+.cartHeader.ng-hide {
+  right: -500px;
+}
+

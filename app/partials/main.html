@@ -1,0 +1,23 @@
+<div class="row">
+  <div ng-repeat="items in itemsForSale track by $index | filter:search | filter:filter" class="col-xs-6 col-sm-4 thumb-parent">
+
+    <!-- Repeat Card -->
+    <div class="thumbnail" ng-class="{active: hover}" ng-mouseenter="hover = true" ng-mouseleave="hover = false">
+      <img ng-src="{{ items.images[0] }}" alt="...">
+      <div class="caption">
+        <p>{{ items.brand }} {{ items.name }} / {{ items.price | currency}}</p>
+        <!-- Hover over card -->
+        <div ng-show="hover" class="hover">
+          <div class="thumbnail">
+            <img ng-src="{{ items.images[0] }}" alt="...">
+            <div class="caption">
+              <p>{{ items.brand }} {{ items.name }} / {{ items.price | currency}}</p>
+              <a ui-sref="home" ng-click="addToCart(items)" class="btn btn-success btn-block" role="button"><span class="glyphicon glyphicon-shopping-cart"></span> Add to Cart</a>
+              <a ui-sref="home.details({id:{{items.id}}})" class="btn btn-primary btn-block" role="button"><span class="glyphicon glyphicon-chevron-right"></span> Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

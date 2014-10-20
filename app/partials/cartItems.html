@@ -1,0 +1,27 @@
+<span ng-show="cartShowActive" class="bg-primary center-block text-center cartHeader">Cart Items</span>
+<div class="animate-show" ng-show="cartShowActive">
+  <table class="table table-striped">
+    <tr>
+      <th>Product</th>
+      <th>Price</th>
+      <th>Remove</th>
+    </tr>
+    <tr ng-repeat="cartItem in cartItems track by $index">
+      <td>
+        <div class="media">
+          <a class="pull-left" href="#">
+            <img class="media-object" ng-src="{{cartItem.images[0]}}" width="64px">
+          </a>
+          <div class="media-body">
+            <h4 class="media-heading">{{cartItem.name}}</h4>
+            Color: {{cartItem.color | capitalize}}
+          </div>
+        </div>
+      </td>
+      <!--<td>{{cartItem.name}} / {{cartItem.color | capitalize}}</td>-->
+      <td>{{cartItem.price | currency}}</td>
+      <td><span class="glyphicon glyphicon-remove" ng-click="removeItem($index)"></span> </td>
+    </tr>
+  </table>
+  <a data-ng-click="deleteCart()">Delete All Items</a>
+</div>

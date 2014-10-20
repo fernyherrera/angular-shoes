@@ -1,0 +1,79 @@
+[
+  {
+    "id":0,
+    "type":"sneakers",
+    "name":"Air Force One",
+    "brand":"Nike",
+    "images":[
+      "images/nike-airforce-gray.jpg",
+      "images/nike-airforce-gray-2.jpg"
+    ],
+    "price":200.00,
+    "color":"gray",
+    "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae justo dapibus, mattis lacus sit amet, iaculis velit. Nullam suscipit sem vel dolor venenatis, nec aliquet neque auctor. Aliquam sit amet lobortis tortor, scelerisque euismod lectus. Quisque feugiat aliquet luctus. Aliquam fermentum consequat elementum. Maecenas accumsan nibh sit amet lectus dignissim, vel facilisis tortor porta. Phasellus nec dui ante. Donec elit nibh, gravida ullamcorper elit eget, fringilla placerat nibh. Donec interdum sed purus sed consequat. Cras sed malesuada est. Proin adipiscing rutrum ante, id placerat nulla condimentum ac. In eu varius ipsum, nec fermentum mauris. Donec eu sagittis lacus, id sodales enim. Morbi sapien massa, tempus ac viverra ullamcorper, pharetra sit amet nisi."
+
+  },
+  {
+    "id":1,
+    "type":"sneakers",
+    "name":"Air Force One",
+    "brand":"Nike",
+    "images":[
+      "images/nike-airforce-blue.jpg",
+      "images/nike-airforce-blue-2.jpg"
+    ],
+    "price":200.00,
+    "color":"blue",
+    "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae justo dapibus, mattis lacus sit amet, iaculis velit. Nullam suscipit sem vel dolor venenatis, nec aliquet neque auctor. Aliquam sit amet lobortis tortor, scelerisque euismod lectus. Quisque feugiat aliquet luctus. Aliquam fermentum consequat elementum. Maecenas accumsan nibh sit amet lectus dignissim, vel facilisis tortor porta. Phasellus nec dui ante. Donec elit nibh, gravida ullamcorper elit eget, fringilla placerat nibh. Donec interdum sed purus sed consequat. Cras sed malesuada est. Proin adipiscing rutrum ante, id placerat nulla condimentum ac. In eu varius ipsum, nec fermentum mauris. Donec eu sagittis lacus, id sodales enim. Morbi sapien massa, tempus ac viverra ullamcorper, pharetra sit amet nisi."
+  },
+  {
+    "id":2,
+    "type":"sneakers",
+    "name":"Air Force One",
+    "brand":"Nike",
+    "images":[
+      "images/nike-airforce-red.jpg",
+      "images/nike-airforce-red-2.jpg"
+    ],
+    "price":250.00,
+    "color":"red",
+    "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae justo dapibus, mattis lacus sit amet, iaculis velit. Nullam suscipit sem vel dolor venenatis, nec aliquet neque auctor. Aliquam sit amet lobortis tortor, scelerisque euismod lectus. Quisque feugiat aliquet luctus. Aliquam fermentum consequat elementum. Maecenas accumsan nibh sit amet lectus dignissim, vel facilisis tortor porta. Phasellus nec dui ante. Donec elit nibh, gravida ullamcorper elit eget, fringilla placerat nibh. Donec interdum sed purus sed consequat. Cras sed malesuada est. Proin adipiscing rutrum ante, id placerat nulla condimentum ac. In eu varius ipsum, nec fermentum mauris. Donec eu sagittis lacus, id sodales enim. Morbi sapien massa, tempus ac viverra ullamcorper, pharetra sit amet nisi."
+  },
+  {
+    "id":3,
+    "type":"boots",
+    "name":"Cowboy Boots",
+    "brand":"Weise",
+    "images":[
+      "images/weise_boots_cowboy.jpg"
+    ],
+    "price":150.00,
+    "color":"black",
+    "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae justo dapibus, mattis lacus sit amet, iaculis velit. Nullam suscipit sem vel dolor venenatis, nec aliquet neque auctor. Aliquam sit amet lobortis tortor, scelerisque euismod lectus. Quisque feugiat aliquet luctus. Aliquam fermentum consequat elementum. Maecenas accumsan nibh sit amet lectus dignissim, vel facilisis tortor porta. Phasellus nec dui ante. Donec elit nibh, gravida ullamcorper elit eget, fringilla placerat nibh. Donec interdum sed purus sed consequat. Cras sed malesuada est. Proin adipiscing rutrum ante, id placerat nulla condimentum ac. In eu varius ipsum, nec fermentum mauris. Donec eu sagittis lacus, id sodales enim. Morbi sapien massa, tempus ac viverra ullamcorper, pharetra sit amet nisi."
+  },
+  {
+    "id":4,
+    "type":"boots",
+    "name":"Alanis",
+    "brand":"Jimmy Choo",
+    "images":[
+      "images/Jimmy-Choo-Alanis-leather-ankle-boots-1.jpg",
+      "images/Jimmy-Choo-Alanis-leather-ankle-boots-2.jpg"
+    ],
+    "price":125.00,
+    "color":"black",
+    "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae justo dapibus, mattis lacus sit amet, iaculis velit. Nullam suscipit sem vel dolor venenatis, nec aliquet neque auctor. Aliquam sit amet lobortis tortor, scelerisque euismod lectus. Quisque feugiat aliquet luctus. Aliquam fermentum consequat elementum. Maecenas accumsan nibh sit amet lectus dignissim, vel facilisis tortor porta. Phasellus nec dui ante. Donec elit nibh, gravida ullamcorper elit eget, fringilla placerat nibh. Donec interdum sed purus sed consequat. Cras sed malesuada est. Proin adipiscing rutrum ante, id placerat nulla condimentum ac. In eu varius ipsum, nec fermentum mauris. Donec eu sagittis lacus, id sodales enim. Morbi sapien massa, tempus ac viverra ullamcorper, pharetra sit amet nisi."
+  },
+  {
+    "id":5,
+    "type":"sports",
+    "name":"Predator LZ",
+    "brand":"Adidas",
+    "images":[
+      "images/adidas-predator-image-1.jpg"
+    ],
+    "price":69.99,
+    "color":"red",
+    "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae justo dapibus, mattis lacus sit amet, iaculis velit. Nullam suscipit sem vel dolor venenatis, nec aliquet neque auctor. Aliquam sit amet lobortis tortor, scelerisque euismod lectus. Quisque feugiat aliquet luctus. Aliquam fermentum consequat elementum. Maecenas accumsan nibh sit amet lectus dignissim, vel facilisis tortor porta. Phasellus nec dui ante. Donec elit nibh, gravida ullamcorper elit eget, fringilla placerat nibh. Donec interdum sed purus sed consequat. Cras sed malesuada est. Proin adipiscing rutrum ante, id placerat nulla condimentum ac. In eu varius ipsum, nec fermentum mauris. Donec eu sagittis lacus, id sodales enim. Morbi sapien massa, tempus ac viverra ullamcorper, pharetra sit amet nisi."
+  }
+]

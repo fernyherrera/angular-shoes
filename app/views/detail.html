@@ -1,0 +1,44 @@
+<!-- <h1>Item: {{ itemDetail.name }} {{ itemDetail.color }}</h1> -->
+
+<div class="panel panel-default details">
+  <div class="panel-heading">{{ itemDetail.brand }} {{ itemDetail.name }}</div>
+  <div class="panel-body">
+    <!-- Breadcrumbs -->
+    <ol class="breadcrumb">
+      <li><a href="#">Home</a></li>
+      <li class="active">{{ itemDetail.brand }} {{ itemDetail.name }}</li>
+    </ol>
+    <div class="row">
+      <div class="col-sm-6">
+        <!-- Main image -->
+        <img ng-src="{{ itemDetail.images[current] }}" class="img-responsive" />
+        <!-- Thumbnail -->
+        <div class="row">
+          <div class="col-xs-3" ng-repeat="image in itemDetail.images">
+            <a href ng-click="setCurrent($index)" class="thumbnail">
+              <img ng-src="{{ image }}" alt="...">
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <a ng-click="addToCart(itemDetail)" class="btn btn-success btn-block" role="button"><span class="glyphicon glyphicon-shopping-cart"></span> Add to Cart</a>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">Product Info: {{ itemDetail.brand }} {{ itemDetail.name }}</h4>
+          </div>
+          <div class="panel-body">
+            <p>{{ itemDetail.description }}</p>
+          </div>
+          <!-- Product Info -->
+          <ul class="list-group">
+            <li class="list-group-item"><strong>Product Name:</strong> {{ itemDetail.name }}</li>
+            <li class="list-group-item"><strong>Brand:</strong> {{ itemDetail.brand }}</li>
+            <li class="list-group-item"><strong>Price:</strong> {{ itemDetail.price | currency }}</li>
+            <li class="list-group-item"><strong>Color:</strong> {{ itemDetail.color }}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
